@@ -1,0 +1,17 @@
+{
+  "seed": 20260829,
+  "data": {
+    "processed_dir": "data/processed",
+    "image_size": 144
+  },
+  "cnn": {
+    "include_reference_glyphs": true,
+    "batch_size": 192,
+    "epochs": 8,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.05,
+    "label_smoothing": 0.1,
+    "num_workers": 6,
+    "dropout": 0.1
+  }
+}

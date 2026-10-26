@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oracle-vit"
+version = "0.1.0"
+description = "Core code for detector-aware crop alignment in oracle-bone document recognition"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "numpy>=2.2,<3",
+    "Pillow>=11,<13",
+    "torch==2.11.0",
+    "torchvision==0.26.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+figures = ["matplotlib>=3.8,<4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+oracle-prepare = "oracle_vit.prepare:main"
+oracle-inspect-data = "oracle_vit.inspect_data:main"
+oracle-train-vision = "oracle_vit.train_vision:main"
+oracle-train-sequence = "oracle_vit.train_sequence:main"
+oracle-eval-vision = "oracle_vit.evaluate_vision:main"
+oracle-infer = "oracle_vit.infer:main"
+oracle-web = "oracle_vit.webapp:main"

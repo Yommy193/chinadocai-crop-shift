@@ -1,0 +1,28 @@
+# Environments and Python caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+.pip-cache/
+.tmp/
+.downloads/
+
+# Private data and generated experiment outputs
+data/*
+!data/README.md
+artifacts/
+outputs/
+runs/
+checkpoints/
+results/
+
+# Model/data formats that should never enter the public history
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npz
+*.npy
+*.jsonl
+*.lst
