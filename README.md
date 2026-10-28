@@ -1,6 +1,6 @@
 # ChinaDocAI 2026: detector-aware crop alignment
 
-This private repository contains the core code for the CSIG/ChinaDocAI 2026
+This repository contains the core code for the CSIG/ChinaDocAI 2026
 study on detector-aware crop alignment for oracle-bone document recognition.
 It supports the controlled cross-evaluation of Anchor, Faster R-CNN, and FCOS
 crop sources, CNN recognizer training, target evaluation, validation summaries,
